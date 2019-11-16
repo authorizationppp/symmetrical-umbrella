@@ -1,3 +1,40 @@
+百度来的：
+// '\t' 制表符 '\n' 换行符
+/*******Author: 时光伴岁月************************/
+/*******Date: 20170902****************************/
+#include<stdio.h>
+
+int main(void)
+{
+    int count_tab=0;
+    int count_newline=0;
+    int count_space=0;
+    int  c;
+
+    while((c=getchar())!=EOF)
+    {
+        if(c=='\t'){
+            ++count_tab;
+        }
+        if(c=='\n'){    
+            ++count_newline;
+        }
+        if(c==' '){
+            ++count_space;
+        }
+
+    }
+    printf("tab_count=%d\t\t \
+                newline_count=%d\t\t \
+                space_count=%d\t\t\n",count_tab,count_newline,count_space);
+
+    return 0;
+}
+————————————————
+版权声明：本文为CSDN博主「博悦1991911」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/lsz1991911/article/details/77801071
+
+自己的错误：
 #include<stdio.h>
 int n1,n2,n3,a;
 int main()
